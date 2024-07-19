@@ -12,7 +12,7 @@ describe("My First Test Suite", function () {
         "button[class='react-calendar__tile react-calendar__decade-view__years__year']"
       ).each(($el, index, $list) => {
         const year = $el.text();
-        if (year == "2027") {
+        if (year == "2028") {
           cy.wrap($el).click();
         }
       });
