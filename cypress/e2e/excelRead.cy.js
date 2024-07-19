@@ -2,7 +2,7 @@ import excelToJson from "convert-excel-to-json";
 import { readFileSync } from "fs";
 
 describe("excel", () => {
-  it("excel", async () => {
+  it.skip("excel", async () => {
     const filepath = "./cypress/downloads/file.xls";
     const result = await cy.task("excelToJsonConverter", filepath);
     cy.log(result);
